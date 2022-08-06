@@ -5,7 +5,7 @@ batting_team_enc = {'Sunrisers Hyderabad': 0, 'Kings XI Punjab': 1, 'Delhi Capit
 bowling_team_enc = {'Mumbai Indians': 0, 'Chennai Super Kings': 1, 'Kings XI Punjab': 2, 'Rajasthan Royals': 3, 'Kolkata Knight Riders': 4, 'Sunrisers Hyderabad': 5, 'Royal Challengers Bangalore': 6, 'Delhi Capitals': 7}
 city_enc ={'Cape Town': 0, 'Nagpur': 1, 'East London': 2, 'Chennai': 3, 'Abu Dhabi': 4, 'Durban': 5, 'Dharamsala': 6, 'Mumbai': 7, 'Ahmedabad': 8, 'Chandigarh': 9, 'Cuttack': 10, 'Bloemfontein': 11, 'Delhi': 12, 'Bengaluru': 13, 'Pune': 14, 'Hyderabad': 15, 'Bangalore': 16, 'Visakhapatnam': 17, 'Kolkata': 18, 'Mohali': 19, 'Port Elizabeth': 20, 'Johannesburg': 21, 'Sharjah': 22, 'Kimberley': 23, 'Jaipur': 24, 'Centurion': 25, 'Raipur': 26, 'Indore': 27, 'Ranchi': 28}
 
-model = joblib.load('model.pkl')
+model = joblib.load('rf.pkl')
 
 st.title("Chasing Predictor")
 st.sidebar.title("Chasing Predictor")
