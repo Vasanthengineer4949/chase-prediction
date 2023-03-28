@@ -23,8 +23,9 @@ runs_left = st.number_input("Enter the Runs Left to chase", min_value=0, max_val
 over = st.number_input("Enter the Over Completed", min_value=0.0, max_value=20.0,format="%.1f")
 wickets_left = st.number_input("Enter the Wickets Left", min_value=0, max_value=10)
 total_runs =  st.number_input("Enter the Total Runs to Chase", min_value=0, max_value=300)
-balls_left = 120 - over*6
-current_rr = ((total_runs - runs_left)/30)*6
+over = round(over)
+balls_left = round(120 - over*6)
+current_rr = ((total_runs - runs_left)/(120-balls_left))*6
 required_rr = (runs_left/balls_left)*6
 confirm = st.button("Predict")
 if confirm:
